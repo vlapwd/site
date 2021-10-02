@@ -8,13 +8,14 @@ export default function Home({ data }) {
   return (
     <Layout>
       <div>
-        <h3
+        {/* <h3
           css={css`
             display: inline-block;
           `}
         >
+        どうやってわけるかなぁ
           ### 2020
-        </h3>
+        </h3> */}
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
